@@ -34,7 +34,7 @@ def query_qwen3(log_data):
 
 # --- Home Page ---
 if st.session_state.page == 'home':
-    st.title("🤖 IntelGen AI Log Triage")
+    st.title("IntelGen AI Log Triage")
     st.markdown("### Reduce analysis from 2 hours to 5 minutes.")
     
     file = st.file_uploader("Upload Log File", type=['log', 'txt'])
@@ -50,8 +50,8 @@ if st.session_state.page == 'home':
 
 # --- Results Page ---
 elif st.session_state.page == 'results':
-    st.title("📊 Analysis Results")
-    if st.button("⬅ Upload New Log"):
+    st.title("Analysis Results")
+    if st.button(" Upload New Log"):
         st.session_state.page = 'home'
         st.rerun()
     
